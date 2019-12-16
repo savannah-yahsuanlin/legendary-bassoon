@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Birdwatching</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG</title>
+</head>
+<style>
 
-  </head>
-  
-  <body>
-    <header>
-      <h1>Birdwatching</h1>
-      <img src="dove.png" alt="a simple dove logo">
-      <nav>
-         <ul>
-            <li><span>Home</span></li>
-            <li><a href="#">Get started</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Gear</a></li>
-            <li><a href="#">Forum</a></li>
-         </ul>
-    </nav>
-    </header>
-    <main>
-       <article>
-        <h2>Welcome</h2>
-            <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p></p>
-            <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
-       </article>
+
+</style>
+<body>
     
-    <aside>
-        <h2>Favourite photos</h2>
-        <a href="favorite-1.jpg"><img src="favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
-        <a href="favorite-2.jpg"><img src="favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
-        <a href="favorite-3.jpg"><img src="favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
-        <a href="favorite-4.jpg"><img src="favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
-      
-    </aside>
-</main>
-    <footer>
-            <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
-            <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
-    </footer>
-  </body>
+
+<svg width="100%" height="100%">
+    <rect width="100%" height="100%" fill="red" />
+    <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+    <polygon points="120,0 240,225 0,225" fill="green"/>
+    <text x="50" y="100" font-family="Verdana" font-size="55"
+          fill="white" stroke="black" stroke-width="2">
+            Hello!
+</text>
+  </svg>
+
+  <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" >
+<defs>
+ <linearGradient id="myGradient" gradientTransform="rotate(45)">
+   <stop offset="15%"  stop-color="aqua" />
+   <stop offset="95%" stop-color="purple" />
+ </linearGradient>
+</defs>
+
+<!-- using my linear gradient -->
+<circle cx="5" cy="5" r="2" fill="url('#myGradient')" />
+</svg>
+  
+  <svg viewBox="10 10 230 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="star" viewBox="0,0,10,10" width="10%" height="10%">
+        <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2"/>
+      </pattern>
+    </defs>
+  
+    
+    <circle cx="50"  cy="50" r="20" fill="url(#star)" />
+    <circle cx="150" cy="50" r="20" fill="none" stroke-width="20" stroke="url(#star)"/>
+  </svg>
+
+  <svg viewBox="10 10 230 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="star" viewBox="0,0,10,10" width="10%" height="10%">
+        <polygon points="0,0 2,5 0,10 5,8 10,10 8,5 10,0 5,2"/>
+      </pattern>
+    </defs>
+  
+    
+    <circle cx="50"  cy="50" r="20" fill="url(#star)" />
+    <circle cx="150" cy="50" r="20" fill="none" stroke-width="20" stroke="url(#star)"/>
+  </svg>
+
+from: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
+</body>
 </html>
+
